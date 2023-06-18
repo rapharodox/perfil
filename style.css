@@ -13,6 +13,7 @@ body{
 
     /*background: color image repeat */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 1000px;
 }
 body * {
     font-family: 'Inter', sans-serif;
@@ -24,7 +25,7 @@ body * {
     --textcolor: white;
     --bg-url : url(./assets/fundo.jpg);
     --copy:white;
-}.light{
+}.light {
     --textcolor : black;
     --bg-url : url(./assets/branco\ fundo.jfif);
     --copy:black;
