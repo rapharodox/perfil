@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   /* background-image: url(./assets/80\ papéis\ de\ parede\ para\ personalizar\ seu\ celular\ com\ seu\ estilo.jfif);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;*/
+
+    /*background: color image repeat */
+    background: var(--bg-url) no-repeat top center/cover;
+}
+body * {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+:root{
+    --textcolor: white;
+    --bg-url : url(./assets/fundo.jpg);
+    --copy:white;
+}.light{
+    --textcolor : black;
+    --bg-url : url(./assets/branco\ fundo.jfif);
+    --copy:black;
+    }
+#container{
+
+    width: 360px;
+    margin: auto;
+   
+    margin-top: 56px;
+
+
+   
+
+}
+#profile{
+    text-align: center;
+    padding: 24px;
+    color: var(--textcolor);
+    
+    
+   
+
+}
+#profile img{
+    width: 100px;
+    border-radius: 30px;
+    
+   
+}
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--textcolor);
+    font-size: 15pt;
+    font: italic bold 15pt arial;
+}
+#one{
+    
+    text-align: center;
+    
+    
+}
+#two{
+   
+    font: bolder 10pt sans-serif;
+    text-align: center;
+    
+    
+
+}
+#tree{
+   
+    text-align: center;
+    
+}
+#but{
+    font: bold 11pt arial;
+    background: black;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 9px;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(253,47,34,1) 56%, rgba(253,53,35,1) 58%, rgba(252,176,69,1) 100%);
+
+    
+}
+#but2{
+    font: bold 11pt arial;
+    background: black;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 9px;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(253,47,34,1) 56%, rgba(253,53,35,1) 58%, rgba(252,176,69,1) 100%);
+}
+#but3{
+    font: bold 11pt arial;
+    background: black;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(253,47,34,1) 56%, rgba(253,53,35,1) 58%, rgba(252,176,69,1) 100%);
+}
+#but:hover{
+    background: rgb(140, 74, 184);
+background: linear-gradient(90deg, rgb(143, 77, 187) 0%, rgb(235, 73, 73) 50%, rgb(241, 75, 63) 56%, rgb(240, 83, 69) 58%, rgb(240, 182, 101) 100%);
+}
+
+#but2:hover{
+    background: rgb(140, 74, 184);
+background: linear-gradient(90deg, rgb(143, 77, 187) 0%, rgb(235, 73, 73) 50%, rgb(241, 75, 63) 56%, rgb(240, 83, 69) 58%, rgb(240, 182, 101) 100%);
+}
+#but3:hover{
+    background: rgb(140, 74, 184);
+background: linear-gradient(90deg, rgb(143, 77, 187) 0%, rgb(235, 73, 73) 50%, rgb(241, 75, 63) 56%, rgb(240, 83, 69) 58%, rgb(240, 182, 101) 100%);
+}
+
+img#insta{
+    width: 40px;
+    position: absolute;
+    right: 749px;
+    bottom: 140px;
+    
+}
+img#linkedin{
+    width: 40px;
+    position: absolute;
+    bottom: 140px;
+    right: 660px;
+}
+img#whatsapp{
+    width: 40px;
+    position: absolute;
+    bottom: 140px;
+    right: 580px;
+}
+#copy{
+    text-align: center;
+    position: absolute;
+    bottom: 90px;
+    right: 630px;
+    color : var(--copy);
+}
+.toggle {
+    position : relative;
+    display : inline-block;
+    width : 45px;
+    height : 25px;
+    background-color: var(--botao);
+    border-radius: 20px;
+    border: 2px solid gray;
+    color: var(--botao);
+    
+}
+        
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: black;
+    top: -1px; 
+    left: -1px;
+    transition:  all 0.5s;
+    
+}
+
+.light #switch + .toggle::after{
+    
+    left: 18px;
+  
+}
+/* Toggle text */
+
+/* Checkbox checked effect */
+
+
+
+/* Checkbox checked effect */
+        
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: var(--botao);
+    color: var(--textcolor) ;
+    background: var(--bg-url) no-repeat top center/cover;
+    
+}
+
+
+
+        
+/* Checkbox vanished */
+.checkbox { 
+    display: none;
+  
+    
+    
+}
+#sub{
+    color: var(--textcolor)
+}
