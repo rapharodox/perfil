@@ -7,22 +7,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael - Perfil</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./chave-seletora.css">
 </head>
-<body>
+<body id="corpo">
     <div id="container">
     <div id="profile">
         <img src="./assets/Rafael.png" alt="Rafael">
         <p><br>Rafael Lisboa<br></p>
-        <p1>Developer</p1>
-
+        <p1 id="sub">Developer</p1>
         
+        <br><br>
+        <input type="checkbox" id="switch"
+                    class="checkbox"  onclick="clicar()"/>
+        <label for="switch" class="toggle"> </label>
         <p></div>
-            <div id="switch">
-                <button></button>
-                <span></span>
-            </div>
 </div>
+
 <div>
     <ul>
         <li id="one">
@@ -34,18 +34,15 @@
         <li id="tree">
             <input id="but3" type="button" value="Siga-me no Instagram" onclick="clique3()">
              </li>
-               
+             
     </ul>
     
     
-</div>
-
-    <footer><p><img id="insta" src="./assets/insta mini.png" alt="insta">
-                <img id="linkedin" src="./assets/linkedin-logo-black-png-image-21.png" alt="">
-                 <img id="whatsapp" src="./assets/whats mini.png" alt=""> </p>
-                <div id="copy"> &copy;rapharodox</div></footer>
-    
-
+    </div>
+            <img id="insta" src="./assets/insta mini.png" alt="insta">
+            <img id="linkedin" src="./assets/linkedin-logo-black-png-image-21.png" alt="">
+             <img id="whatsapp" src="./assets/whats mini.png" alt=""> 
+            <div id="copy"> &copy;rapharodox</div>
     <script>
         //<a href="https://www.linkedin.com/in/rafael-lisboa-4aa671276" target="_blank"></a>
         //<a href="https://api.whatsapp.com/qr/FS3DSOZQJKGYB1?autoload=1&app_absent=0" target="_blank">Meu Whatsapp </a>
@@ -65,8 +62,29 @@
             window.location.href = "https://www.instagram.com/rapharodox/"
 
         }
-    
-    
+        function clicar(){
+            const html = document.documentElement
+            html.classList.toggle('light')
+            
+            var foto = document.querySelector('#profile img')
+            if(html.classList.contains('light')){
+                foto.setAttribute('src', './assets/rafael.png')
+            } else {
+                foto.setAttribute('src', './assets/rafael-light.jpg')
+            }
+           /* if(html.classList.contains('light')){
+                html.classList.remove('light')
+            } else {
+                html.classList.add('light')
+            }*/
+       
+      
+        //pegar tag image
+
+        //substituir imagem
+        //se tiver light, adicionar imagem light
+        //se tiver night, manter imagem padrao
+    }
     </script>
     
 </body>
