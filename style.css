@@ -130,7 +130,7 @@ background: linear-gradient(90deg, rgb(143, 77, 187) 0%, rgb(235, 73, 73) 50%, r
 img#insta{
     width: 40px;
     position: absolute;
-    right: 749px;
+    right: 744px;
     bottom: 140px;
     
 }
@@ -138,13 +138,13 @@ img#linkedin{
     width: 40px;
     position: absolute;
     bottom: 140px;
-    right: 660px;
+    right: 652px;
 }
 img#whatsapp{
     width: 40px;
     position: absolute;
     bottom: 140px;
-    right: 580px;
+    right: 570px;
 }
 #copy{
     text-align: center;
