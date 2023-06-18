@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -30,11 +31,11 @@ body * {
     }
 #container{
 
-    width: 360px;
+    width: 100%;
     margin: auto;
-   
+    max-width: 588px;
     margin-top: 56px;
-
+    
 
    
 
@@ -178,12 +179,13 @@ img#whatsapp{
 }
 
 .light #switch + .toggle::after{
-    
     left: 18px;
   
 }
-/* Toggle text */
 
+#switch +.toggle:hover{
+    outline: 2px solid white;
+}
 /* Checkbox checked effect */
 
 
@@ -198,16 +200,24 @@ img#whatsapp{
     
 }
 
-
-
-        
 /* Checkbox vanished */
 .checkbox { 
-    display: none;
-  
-    
+    display: none; 
     
 }
+
 #sub{
     color: var(--textcolor)
+}
+@media(min-width:700px){
+    :root{
+        --bg-url : url(./assets/fundo.jpg);
+    }
+    .light {
+        --bg-url : url(./assets/branco\ fundo.jfif);
+    }
+}
+
+@keyframes slide-in{
+
 }
